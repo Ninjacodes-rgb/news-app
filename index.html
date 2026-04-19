@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nexus - Premium daily news covering technology, science, and global events." />
+    <title>Nexus | Premium News</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="ambient-background"></div>
+    
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="#" class="brand">NEXUS<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Top Stories</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Science</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle icon-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <a href="#" class="hero-link">
+                <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1974&auto=format&fit=crop');">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content glass-panel">
+                    <span class="category-badge spark-anim">Science</span>
+                    <h1 class="hero-title">James Webb Telescope Discovers Exoplanet with Evidence of Atmospheric Water</h1>
+                    <p class="hero-excerpt">Astronomers report ground-breaking spectral data from the edge of the habitable zone of a nearby red dwarf system, hinting at the potential for liquid water and sparking new hopes in the search for extraterrestrial life.</p>
+                    <div class="meta-data">
+                        <span class="author">Dr. Emily Chen</span>
+                        <span class="dot">•</span>
+                        <span class="time">2 hours ago</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Breaking News Marquee -->
+        <div class="breaking-news glass">
+            <div class="breaking-label"><span class="pulse-dot"></span> LIVE</div>
+            <div class="marquee-container">
+                <div class="marquee-content" id="marquee-content">
+                    <span>Global tech stocks rally after positive earnings reports...</span>
+                    <span>New climate accord signed by 50 nations in Geneva...</span>
+                    <span>Electric vehicle sales hit record high in Q3...</span>
+                    <span>Breakthrough in quantum computing error correction published...</span>
+                    <!-- Duplicated for seamless loop -->
+                    <span>Global tech stocks rally after positive earnings reports...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest News Grid -->
+        <section class="latest-news">
+            <div class="section-header">
+                <h2>Latest Updates</h2>
+                <a href="#" class="view-all">View All <span>&rarr;</span></a>
+            </div>
+            
+            <div class="news-grid" id="news-grid">
+                <!-- Articles will be injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="brand">NEXUS<span>.</span></div>
+                <p>Empowering minds with precision journalism. Stay informed with our cutting-edge reporting.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Categories</h4>
+                <a href="#">Technology</a>
+                <a href="#">Business</a>
+                <a href="#">Science</a>
+                <a href="#">Culture</a>
+            </div>
+            <div class="footer-col subscribe">
+                <h4>Newsletter</h4>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Email address" aria-label="Email for newsletter"/>
+                    <button type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nexus News Media. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
